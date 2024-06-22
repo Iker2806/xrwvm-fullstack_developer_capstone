@@ -7,9 +7,9 @@ from django.shortcuts import get_object_or_404, render, redirect
 from django.contrib.auth import logout
 from django.contrib.auth import login, authenticate
 from django.contrib.auth.models import User
- from django.contrib import messages
+from django.contrib import messages
 from datetime import datetime
-
+from .restapis import get_request
 from django.http import JsonResponse
 import logging
 import json
